@@ -1,0 +1,38 @@
+<DOCTYPE! html>                                 <!--This is html5 document declrtion-->
+<html>
+    <head>                                      <!--This is head part-->
+    	<title>overlapping of text</title>      <!--Title of webpage-->
+    	<style>                                 /* Internal Styling of content */                           
+    	    #one { 
+    	    	position: absolute;
+    	    	 margin-left:0px; 
+    	    	 top:5px;
+    	    }                                   
+    	    #two {
+    	    	position: absolute; 
+    	    	top: 190px; 
+    	    	z-index: -1;
+    	    }
+    	</style>
+    </head>
+    <body>                                       <!--Body of webpage-->
+        <h1>This is heading.This is heading.   {{ Image infront of the Text  }}</h1>
+    	<p>
+    		This is paragraph This is paragraph
+    	</p>
+    	<p>
+    		HEllo world Hello world
+    	</p>
+        <img src="acadgild.png" alt="acadgild" id="one" height="52" width="165">
+        <br>
+        <br>                                     <!--Spacing or next line to appear in webpage-->
+        <h1 style="color: orange;">This is heading.This is heading.  {{  Image behind the text (becuause "z-index: -1") }}</h1>
+    	<p>
+    		This is paragraph This is paragraph
+    	</p>
+    	<p>
+    		HEllo world Hello world
+    	</p>
+        <img src="acadgild1.png" alt="acadgild" id="two" height="52" width="165">
+    </body>                                  
+</html>                                           <!--End of html-->
